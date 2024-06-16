@@ -6,6 +6,16 @@ WAF, або фаєрвол для феб-застосунків - це таки�
 ## 2. Хід роботи
 1. Підняти віртуальну машину з Ubuntu  
 2. [Встановити на Ubuntu OWASP Juice shop](https://pwning.owasp-juice.shop/companion-guide/latest/part1/running.html)  
+```
+# Встановити Docker Engine  
+sudo apt install docker.io  
+
+# Завантажити імедж контейнеру з juice-shop  
+docker pull bkimminich/juice-shop
+
+# Запустити контейнер  
+docker run -d -p 127.0.0.1:3000:3000 bkimminich/juice-shop  
+```
 3. [Встановити веб сервер, що буде працювати як reverse proxy для вашого juiceshop аплікейшину (nginx або apache)](https://pwning.owasp-juice.shop/part1/running.html)  
 4. [Виконати кілька атак на веб застосунок щоб перевірити працездатність та вразливість застосунку](https://pwning.owasp-juice.shop/part1/running.html)  
 5. [Встановити оупенсорсний WAF (web application firewall) ModSecurity під обраний вами веб сервер](https://github.com/owasp-modsecurity/ModSecurity-nginx)  
