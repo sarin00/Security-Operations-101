@@ -40,7 +40,7 @@ server_name yourdomain.com www.yourdomain.com;
 5. [Встановити оупенсорсний WAF (web application firewall) Open AppSec від checkpoint](https://github.com/openappsec/openappsec)  
 ```
 wget https://downloads.openappsec.io/open-appsec-install && chmod +x open-appsec-install
-./open-appsec-install --auto
+./open-appsec-install --auto --prevent
 open-appsec-ctl --status
 ```
 6. [Налаштувати ModSecurity правила для вловлення базових веб атак](https://owasp.org/www-project-modsecurity-core-rule-set/)  
