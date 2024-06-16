@@ -17,6 +17,25 @@ docker pull bkimminich/juice-shop
 docker run -d -p 127.0.0.1:3000:3000 bkimminich/juice-shop  
 ```
 3. [Встановити веб сервер, що буде працювати як reverse proxy для вашого juiceshop аплікейшину (nginx або apache)](https://github.com/sarin00/Course1-Intro-to-Cybersecruity/blob/main/11%20%D0%9F%D0%97%20-%20%D0%92%D0%B5%D0%B1%20%D1%81%D0%B5%D1%80%D0%B2%D0%B5%D1%80%2C%20%D0%B2%D0%B5%D0%B1%20%D0%B7%D0%B0%D1%81%D1%82%D0%BE%D1%81%D1%83%D0%BD%D0%BE%D0%BA%2C%20%D1%97%D1%85%20%D0%B1%D0%B5%D0%B7%D0%BF%D0%B5%D0%BA%D0%B0/Web%20app%2C%20nginx%2C%20SSL%20certs.md#6-%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%BD%D0%B5-%D0%B7%D0%B0%D0%B2%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F)  
+```
+# Встановити nginx
+sudo apt install nginx
+
+# Редагувати конфіг nginx
+nano /etc/nginx/sites-available/default
+
+# Додати в конфіг такі дані:
+server_name yourdomain.com www.yourdomain.com;
+
+ location / {
+        proxy_pass http://localhost:3000; #port for juice-shop
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+```
 4. [Виконати кілька атак на веб застосунок щоб перевірити працездатність та вразливість застосунку](https://pwning.owasp-juice.shop/part1/running.html)  
 5. [Встановити оупенсорсний WAF (web application firewall) ModSecurity під обраний вами веб сервер](https://github.com/owasp-modsecurity/ModSecurity-nginx)  
 6. [Налаштувати ModSecurity правила для вловлення базових веб атак](https://owasp.org/www-project-modsecurity-core-rule-set/)  
