@@ -43,7 +43,7 @@ wget https://downloads.openappsec.io/open-appsec-install && chmod +x open-appsec
 ./open-appsec-install --auto --prevent
 open-appsec-ctl --status
 ```
-6. [Налаштувати ModSecurity правила для вловлення базових веб атак](https://owasp.org/www-project-modsecurity-core-rule-set/)  
+6. [Документація про керування та налаштування Open AppSec](https://docs.openappsec.io/getting-started/start-with-linux/using-the-open-appsec-ctl-tool)  
 7. Проаналізувати ефективність WAF
 
 Основна задача цього заняття це зрозуміти, як само WAF інстурменти можуть допомагати нам захщати веб застосунки та навчитись налаштовувати безкоштовний WAF ModSecurity.
