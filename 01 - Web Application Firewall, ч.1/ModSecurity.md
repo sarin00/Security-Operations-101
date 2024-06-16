@@ -24,7 +24,7 @@ sudo apt install nginx
 # Редагувати конфіг nginx
 nano /etc/nginx/sites-available/default
 
-# Додати в конфіг такі дані:
+# Додати в конфіг в секціїю location наступні дані:
 server_name yourdomain.com www.yourdomain.com;
 
  location / {
