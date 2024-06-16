@@ -37,10 +37,11 @@ server_name yourdomain.com www.yourdomain.com;
     }
 ```
 4. [Виконати кілька атак на веб застосунок щоб перевірити працездатність та вразливість застосунку](https://help.owasp-juice.shop/appendix/solutions.html)  
-5. [Встановити оупенсорсний WAF (web application firewall) AppSec від checkpoint](https://github.com/openappsec/openappsec)  
+5. [Встановити оупенсорсний WAF (web application firewall) Open AppSec від checkpoint](https://github.com/openappsec/openappsec)  
 ```
 wget https://downloads.openappsec.io/open-appsec-install && chmod +x open-appsec-install
 ./open-appsec-install --auto
+open-appsec-ctl --status
 ```
 6. [Налаштувати ModSecurity правила для вловлення базових веб атак](https://owasp.org/www-project-modsecurity-core-rule-set/)  
 7. Проаналізувати ефективність WAF
