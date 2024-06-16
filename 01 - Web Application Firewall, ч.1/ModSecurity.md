@@ -36,7 +36,7 @@ server_name yourdomain.com www.yourdomain.com;
         proxy_cache_bypass $http_upgrade;
     }
 ```
-4. [Виконати кілька атак на веб застосунок щоб перевірити працездатність та вразливість застосунку](https://pwning.owasp-juice.shop/part1/running.html)  
+4. [Виконати кілька атак на веб застосунок щоб перевірити працездатність та вразливість застосунку](https://help.owasp-juice.shop/appendix/solutions.html)  
 5. [Встановити оупенсорсний WAF (web application firewall) ModSecurity під обраний вами веб сервер](https://github.com/owasp-modsecurity/ModSecurity-nginx)  
 6. [Налаштувати ModSecurity правила для вловлення базових веб атак](https://owasp.org/www-project-modsecurity-core-rule-set/)  
 7. Проаналізувати ефективність WAF
