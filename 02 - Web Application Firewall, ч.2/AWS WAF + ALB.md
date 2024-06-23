@@ -32,7 +32,7 @@ AWS WAF працює на 7-му рівні моделі OSI з HTTP та HTTPS 
 Блокування SQL ін'єкцій  
 ![SQL](https://github.com/sarin00/Security-Operations-101/blob/main/99%20-%20%D0%94%D0%BE%D0%B4%D0%B0%D1%82%D0%BA%D0%BE%D0%B2%D1%96%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D1%96%D0%B0%D0%BB%D0%B8/WAF-SQLrule.png)  
   
-Блокування запитів на API ендпоінт без необхідного значення cookie:  
+Блокування запитів на API ендпоінт без необхідного cookie:  
 ![token](https://github.com/sarin00/Security-Operations-101/blob/main/99%20-%20%D0%94%D0%BE%D0%B4%D0%B0%D1%82%D0%BA%D0%BE%D0%B2%D1%96%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D1%96%D0%B0%D0%BB%D0%B8/WAF-NoSessionTokenrule.png)  
 
 Блокування GET запитів якщо їх кількість перевищує 100 за 5 хвилин:  
