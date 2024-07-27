@@ -50,7 +50,7 @@ csrss.exe - client/server runtime subsystem - це процес який кер�
 3. Parent Process має бути non-existent
 4. Має бути стільки csrss.exe, скільки сумарно winlogon + wininit
 
-Що є аномальним для csrss.exe?  
+Що є **аномальним** для csrss.exe?  
 1. Parent Process живий, та/або не smss.exe (якщо дивитись в логах)
 2. Запущено не з файлу %SystemRoot%\System32\csrss.exe
 3. Нема winlogon чи wininit процесу, чий PPID співпадав би з PPID досліджуємого csrss.exe
