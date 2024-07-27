@@ -42,16 +42,16 @@ Smss.exe - session manager - відповідає за створення нов
 3. Більш ніж один запущений екземпляр в моменті перевірки живого дерева процесів
 
 ### 3.3 csrss.exe
-csrss.exe - client/server runtime subsystem - це процес який керує процесам, потоками, імпортом багатьох DLL які надають можливість користуватись Windows API, та контроль над завершенням GUI при завершенні роботи системи. Для кожної сесії, ОС чи користувацької, має бути по одному csrss.exe. Цей процес запускається тимчасовим, сесійним smss.exe, тому не має живого Parent Process.  
+csrss.exe - client/server runtime subsystem - це процес який керує процесами, потоками, імпортом багатьох DLL які надають можливість користуватись Windows API, та контроль над завершенням GUI при завершенні роботи системи. Для кожної сесії, ОС чи користувацької, має бути по одному csrss.exe. Цей процес запускається тимчасовим, сесійним smss.exe, тому не має живого Parent Process.  
 
 Що є **нормальним** для csrss.exe?  
 1. Path %SystemRoot%\System32\csrss.exe  
 2. Кількість csrss одночасно 2 чи більше  
 3. Parent Process має бути non-existent
-4. Має бути стільки csrss.exe, скільки сумарно winlogon + wininit
+4. Має бути стільки csrss.exe, скільки сумарно winlogon + wininit процесів
 
 Що є **аномальним** для csrss.exe?  
-1. Parent Process живий, та/або не smss.exe (якщо дивитись в логах)
+1. Parent Process живий, та/або не smss.exe
 2. Запущено не з файлу %SystemRoot%\System32\csrss.exe
 3. Нема winlogon чи wininit процесу, чий PPID співпадав би з PPID досліджуємого csrss.exe
 
