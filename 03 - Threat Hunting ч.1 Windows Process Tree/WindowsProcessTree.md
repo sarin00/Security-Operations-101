@@ -5,7 +5,9 @@
 На цьому занятті ми почнемо з простого - ми будемо Threat Hunt-ити в процесах ОС Windows.
 
 ## 2. Процеси Windows
-Для того щоб знаходити аномальні процеси потрібно знати як виглядають нормальні процеси та здорове дерево процесів. [Ми вивчали основу процесів на першому занятті вступного курсу](https://github.com/sarin00/Course1-Intro-to-Cybersecruity/blob/main/01%20%D0%9F%D0%97%20-%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8%20Windows/Windows%20Basics.md#3-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D0%B8). Почнемо з того що подивимось як виглядає дерево процесів на вашій Windwos ОС.
+Для того щоб знаходити аномальні процеси потрібно знати як виглядають нормальні процеси та здорове дерево процесів. [Ми вивчали основу процесів на першому занятті вступного курсу](https://github.com/sarin00/Course1-Intro-to-Cybersecruity/blob/main/01%20%D0%9F%D0%97%20-%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B8%20Windows/Windows%20Basics.md#3-%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D0%B8). Почнемо з того що подивимось як виглядає дерево процесів на вашій Windwos ОС.  
+
+![Здорове дерево процесів](https://github.com/sarin00/Course1-Intro-to-Cybersecruity/blob/main/%D1%8F%D0%94%D0%BE%D0%B4%D0%B0%D1%82%D0%BA%D0%BE%D0%B2%D1%96%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D1%96%D0%B0%D0%BB%D0%B8/Win_proctree.png)
 
 ### Завдання 1: Procexp64
 1. Завантажте [Sysinternals інструменти з сайту Майкрософт](https://learn.microsoft.com/en-us/sysinternals/downloads/).  
