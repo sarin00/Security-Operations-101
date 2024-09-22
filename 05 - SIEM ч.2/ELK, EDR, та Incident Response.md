@@ -6,5 +6,10 @@
 3. Встановити на Windows elastic agent
 4. Додати до Elastic фічу Endpoint Security, налаштувати її для групи в якій знаходиться Windows жертва
 5. Включити заготовані правила детектування від Elastic для EDR
-6. Запустити імітатори шкідливого софту на Windows, що змусить Elastic створити альорти
+6. Запустити імітатори шкідливого софту на Windows, що змусить Elastic створити альорти  
+    [APT simulator](https://github.com/NextronSystems/APTSimulator)  
+    [Ransomware simulator](https://www.knowbe4.com/free-cybersecurity-tools/ransomware-simulator)  
+    [Powershell ransomware simulator](https://github.com/JoelGMSec/PSRansom)
+    [Powershell reverse shell](https://swisskyrepo.github.io/InternalAllTheThings/cheatsheets/shell-reverse-cheatsheet/#powershell)  
+    [Code execution](https://www.ired.team/offensive-security/code-execution)
 7. Розслідувати альорти в Elastic, зрозуміти які події трапились на Windows OS, хто став причиною зараження, і т.д.
