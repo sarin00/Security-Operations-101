@@ -3,7 +3,7 @@
 ### 1.1 Дії
 1. Створити акаунт на Elastic і [запустити тріальну версію їх SaaS рішення](https://www.elastic.co/cloud/cloud-trial-overview) (банківська картка не потрібна для цього)
 2. Підняти Windows машинку яка буде "жертвою атаки". Це імітація звичайних робочих станцій нашої компанії які ми маємо захищчати
-3. Включити інтеграцію Elastic Defend. Integrations -> Elastic Defend -> кнопка "Add Elastic Defend" -> Add Integration Only (skip agent installation).
+3. Включити інтеграцію Elastic Defend. Integrations -> Elastic Defend -> кнопка "Add Elastic Defend" -> Додати до Agent Policy -> створити нову Agent Policy.
 4. Встановити на Windows elastic agent. Будьте обережними з тим в яку папку ви завантажите агент та з якої папки будете його запускати. В інсталяційному гайді вам надасться кілька команд які треба виконати на Windows машині у PowerShell. Ці команди окремі, не одне ціле, і запускаються по черзі.
 5. Перейти в Analytics -> Discover, і перевірити що логи з Windows OS надсилаються у Elastic. За замовчуванням логи відправляються кожну хвилину.
 6. Включити заготовані правила детектування від Elastic для EDR. Security -> Rules -> Detection Rules -> Tags -> OS:Windows, виділити всі повернені результати -> Bulk actions -> Enable.
