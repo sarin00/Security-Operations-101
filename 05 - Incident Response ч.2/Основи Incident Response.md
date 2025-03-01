@@ -114,4 +114,6 @@ IR - це неймовірно цікава активність, яка вим�
 2. [Incident Response на Linux](https://www.hackingarticles.in/incident-response-linux-cheatsheet/)
 3. [13Cubed](https://www.youtube.com/@13Cubed)
 4. [SANS курси, платні але є в інеті](https://www.sans.org/digital-forensics-incident-response/?msc=resources-icons)
-5. [Приклад IR Report від HackTheBox](https://docs.google.com/document/d/e/2PACX-1vTkpIEicOwy8tRNAxKa4f4cMpc7wrUHRM5Nr_A_bObpzDQg5pAvj7jniHa_uVWQCuHLr21hQO64BsVi/pub)  
+5. [Приклад IR Report від HackTheBox](https://docs.google.com/document/d/e/2PACX-1vTkpIEicOwy8tRNAxKa4f4cMpc7wrUHRM5Nr_A_bObpzDQg5pAvj7jniHa_uVWQCuHLr21hQO64BsVi/pub)
+6. [MITRE Attack Matrix](https://attack.mitre.org/)  
+7. [Cyber Kill Chain](https://www.microsoft.com/en-us/security/business/security-101/what-is-cyber-kill-chain#Eight-phases)  
