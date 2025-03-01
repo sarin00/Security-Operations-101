@@ -113,4 +113,5 @@ IR - це неймовірно цікава активність, яка вим�
 1. [Сайт з купою інструментів, ресурсів, книг, та посилань на інші навчальні ресурси по DFIR](https://www.dfir.training/resources?f=4)  
 2. [Incident Response на Linux](https://www.hackingarticles.in/incident-response-linux-cheatsheet/)
 3. [13Cubed](https://www.youtube.com/@13Cubed)
-4. [SANS курси, платні але є в інеті](https://www.sans.org/digital-forensics-incident-response/?msc=resources-icons)  
+4. [SANS курси, платні але є в інеті](https://www.sans.org/digital-forensics-incident-response/?msc=resources-icons)
+5. [Приклад IR Report від HackTheBox](https://docs.google.com/document/d/e/2PACX-1vTkpIEicOwy8tRNAxKa4f4cMpc7wrUHRM5Nr_A_bObpzDQg5pAvj7jniHa_uVWQCuHLr21hQO64BsVi/pub)  
